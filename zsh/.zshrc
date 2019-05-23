@@ -83,32 +83,11 @@ ssh-add ~/.ssh/id_rsa &>/dev/null
 alias zshconfig="v ~/.zshrc"
 alias ohmyzsh="v ~/.oh-my-zsh"
 
-# List PSQL processes
-alias listpsql="lsof -i tcp:5432"
-alias listforeman="lsof -i tcp:5000"
-alias killpsqlconnections="sh ~/killpsql.sh"
-
-# GO
-alias godocs="godoc --http=:6060 -d"
-
-# NeoVim Alias
-alias v='nvim'
-
 # Git
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias gs='git status'
 alias gpom='git push origin master'
 alias gc='git commit -m'
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias s="rspec"
-
-# better bundle alias
-alias b='bundle install --binstubs .bundle/bin --path .bundle/gems'
-
-# Wipe rails DB
-alias pdb="bundle exec rake db:drop db:create db:migrate db:seed RAILS_ENV=development"
 
 # Vagrant
 alias vu="vagrant up"
@@ -130,27 +109,6 @@ rainymood() {
   mpv "$URL" && rainymood
 }
 
-# use vim bindings
-#bindkey -v
-# reeable Ctrl-R for history (unbound with vim bindings)
-#bindkey '^R' history-incremental-search-backward
-
-# Added by the Heroku Toolbelt
-# export GOPATH=$HOME/go
-# export PATH="/usr/local/heroku/bin:$PATH"
-# export PATH=$GOPATH/bin:$PATH
 export PATH="/usr/local/python/bin:$PATH"
 export PATH="/Users/jackcutting/Library/Python/3.7/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
-# ASDF
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
-
-# ZSH Completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# heroku autocomplete setup
-# HEROKU_AC_ZSH_SETUP_PATH=/Users/jackcutting/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;

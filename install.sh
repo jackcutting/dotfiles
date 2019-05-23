@@ -50,18 +50,6 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/input/.inputrc" ~
 ln -sfv "$DOTFILES_DIR/input/.aliases" ~
 
-### Postgres
-ln -sfv "$DOTFILES_DIR/psql/.psqlrc" ~
-
-### Ruby
-ln -sfv "$DOTFILES_DIR/ruby/.rspec" ~
-ln -sfv "$DOTFILES_DIR/ruby/.rubocop.yml" ~
-
-### TMUX
-ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~
-ln -sfv "$DOTFILES_DIR/tmux/tmuxinator.zsh" ~/.bin
-ln -sfv "$DOTFILES_DIR/tmux/.tmuxinator" ~
-
 ### Vim
 ln -sfv "$DOTFILES_DIR/vim/.agignore" ~
 ln -sfv "$DOTFILES_DIR/vim/.ctags" ~

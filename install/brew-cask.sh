@@ -10,11 +10,9 @@ brew tap caskroom/fonts
 # Install packages
 
 apps=(
-  adobe-acrobat-reader
   alfred
   android-studio
   atom
-  caffeine
   docker
   dropbox
   firefox
@@ -30,7 +28,6 @@ apps=(
   sequel-pro
   spotify
   sublime-text
-  teamviewer
   the-unarchiver
   transmit
   qlcolorcode
