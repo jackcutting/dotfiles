@@ -1,4 +1,4 @@
-COMPUTER_NAME="jackcuttingmbp"
+COMPUTER_NAME="jackcuttings-imac"
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -82,8 +82,8 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Finder: show status bar
-defaults write com.apple.finder ShowStatusBar -bool true
+# Finder: hide status bar
+defaults write com.apple.finder ShowStatusBar -bool false
 
 # Finder: show hidden files
 defaults write com.apple.finder AppleShowAllFiles YES

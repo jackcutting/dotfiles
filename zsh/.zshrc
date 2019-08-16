@@ -46,11 +46,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export PATH="./.bundle/bin:$PATH"
@@ -61,8 +61,8 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Default editor settings
-export EDITOR=/usr/local/bin/nvim
-export VISUAL=/usr/local/bin/nvim
+export EDITOR=/usr/bin/vi
+export VISUAL=/usr/bin/vi
 export KEYTIMEOUT=1
 
 # Compilation flags
@@ -102,13 +102,11 @@ alias r="reload"
 alias ls='ls -a'
 alias eod='pmset sleepnow'
 
-# Rainy Mood
-rainymood() {
-  FILE=$((RANDOM%4))
-  URL="https://rainymood.com/audio1110/${FILE}.ogg"
-  mpv "$URL" && rainymood
-}
-
 export PATH="/usr/local/python/bin:$PATH"
 export PATH="/Users/jackcutting/Library/Python/3.7/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
