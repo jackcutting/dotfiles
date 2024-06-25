@@ -40,6 +40,9 @@ alias r='source ~/.zshrc'
 alias tm='tmux new-session -A -s default'
 alias gs='git status'
 alias ga='git add'
+alias gaa='git add --all'
+alias gap='git add -p'
+alias gacm='gaa && gc -m'
 alias gp='git push'
 alias gpo='git push origin'
 alias gtd='git tag --delete'
@@ -65,7 +68,7 @@ precmd() {
 zstyle ':vcs_info:git:*' formats '%b '
 
 setopt PROMPT_SUBST
-PROMPT='%(?:%F{green}➜ :%F{red}➜ %f) %F{blue}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
+PROMPT='%(?:%F{green}%1{➜%}:%F{red}%1{➜%}%f) %F{blue}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jack/.zshrc'
