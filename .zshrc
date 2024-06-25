@@ -65,7 +65,7 @@ precmd() {
 zstyle ':vcs_info:git:*' formats '%b '
 
 setopt PROMPT_SUBST
-PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='%(?:%F{green}➜ :%F{red}➜ %f) %F{blue}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jack/.zshrc'
