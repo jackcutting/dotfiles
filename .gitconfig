@@ -1,0 +1,6 @@
+[user]
+	name = Jack Cutting
+	email = me@jackcutting.co.uk
+
+[init]
+	defaultBranch = main
