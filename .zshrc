@@ -9,7 +9,7 @@ bindkey -e
 #export TERM=xterm-256color
 
 # Use VIM as default editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Make zsh autocomplete with up arrow
@@ -68,7 +68,10 @@ precmd() {
 zstyle ':vcs_info:git:*' formats '%b '
 
 setopt PROMPT_SUBST
-PROMPT='%(?:%F{green}%1{➜%}:%F{red}%1{➜%}%f) %F{blue}%~%f %F{cyan}${vcs_info_msg_0_}%f$ '
+PROMPT='%(?:%F{green}%1{➜%}:%F{red}%1{➜%}%f) %F{blue}%2~%f %F{cyan}${vcs_info_msg_0_}%f$ '
+
+# Add to PATH
+export PATH="$HOME/.local/bin:$PATH"
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jack/.zshrc'

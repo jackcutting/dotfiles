@@ -4,14 +4,18 @@ A small collection of config files that can be shared across all devices (runnin
 
 ## Requirements
 
-- Zsh
-- Vim
-- Tmux
-- Stow
+- [Zsh]
+- [NeoVim]
+- [NvChad]
+- [Tmux]
+- [Tmux Plugin Manager]
+- [Stow]
 
 ## Installation
 
-Once all the required software is installed, this repo can be cloned and `stow` can be run from the repo dir:
+1. Follow the installation instructions of all of the requirements.
+2. Ensure a [Nerd Font] is installed and set to the default font of the terminal emulator.
+3. Run `stow` from the repo dir:
 
 ```sh
 $ stow .
@@ -28,4 +32,11 @@ $ stow -D .
 ## Potential Updates (TODO)
 
 - Add Makefile for installing/uninstalling
-- Add config for Vim (.vimrc)
+- Add config for Vim/NeoVim (.vimrc)
+
+[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+[NeoVim](https://neovim.io/)
+[NvChad](https://nvchad.com/)
+[Tmux](https://github.com/tmux/tmux/wiki)
+[Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+[Stow](https://www.gnu.org/software/stow/)
