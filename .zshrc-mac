@@ -1,0 +1,12 @@
+# homebrew
+eval $(/usr/local/bin/brew shellenv)
+
+# thefuck
+eval $(thefuck --alias)
+
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+

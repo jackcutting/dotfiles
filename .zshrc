@@ -80,3 +80,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# load OS specific config
+case `uname` in
+  Darwin)
+    source $HOME/.zshrc-mac
+  ;;
+  Linux)
+    source $HOME/.zshrc-linux
+  ;;
+  FreeBSD)
+    # commands for FreeBSD go here
+  ;;
+esac
