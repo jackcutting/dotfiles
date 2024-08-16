@@ -53,11 +53,12 @@ alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout '
-alias gl='git log'
+alias gl='git pull'
 alias gr='git remote'
 alias grs='git remote show'
 alias glo='git log --pretty="oneline"'
 alias glol='git log --graph --oneline --decorate'
+alias gcm='git checkout $(git remote show origin | sed -n "/HEAD branch/s/.*: //p")'
 
 # Set up prompt styles
 autoload -Uz vcs_info
